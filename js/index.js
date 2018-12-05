@@ -137,8 +137,8 @@ scriptNode.onaudioprocess = function(audioProcessingEvent) {
         
         resultiDFT = iDFT(modReal,modImm);
         
-        for(var i = 50; i < inputBuffer.length/2; i++){
-          outputData[i] = resultiDFT[0][i*2];
+        for(var i = 50; i < inputBuffer.length; i++){
+          outputData[i] = resultiDFT[0][i];
         } 
         
       }       
